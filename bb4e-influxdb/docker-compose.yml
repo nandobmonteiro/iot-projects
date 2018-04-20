@@ -1,0 +1,8 @@
+influxdb:
+  build: .
+  ports:
+   - "8083:8083"
+   - "8086:8086"
+  volumes:
+   - /volumes/bb4e-iot/bb4e-influxdb:/var/lib/influxdb
+  restart: always

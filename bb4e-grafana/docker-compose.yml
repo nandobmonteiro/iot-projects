@@ -1,0 +1,7 @@
+grafana:
+  build: .
+  ports:
+    - "2000:3000"
+  volumes:
+    - /volumes/bb4e-iot/bb4e-grafana:/var/lib/grafana
+  restart: always
